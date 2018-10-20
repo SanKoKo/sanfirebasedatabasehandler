@@ -14,7 +14,7 @@ How to add
 2. module gradle ထဲမှာအောက်ပါအတိုင်းထည့်ပါ။
 
 			dependencies {
-		        implementation 'com.github.SanKoKo:sanfirebasedatabasehandler:Tag'
+		        implementation 'com.github.SanKoKo:sanfirebasedatabasehandler:1.0'
 		}
 
 3. Firebase ကိုသုံးမယ်ဆိုရင် ထည့်ရမယ့် google-services ကို project build.gradle ထဲမှာထည့်ပါ။
