@@ -104,6 +104,7 @@ CRUD လုပ်မည့် object class သည် SanFireDbResult ကို e
 
 # Insert
 insert လုပ်ရန် အောက်ပါအတိုင်း တစ်ကြောင်းတည်းသာရေးရန် လိုပါသည်။
+
 		ChatUser mChat = new Chat("username","users@email.com);
 		mChat.insert();
 
