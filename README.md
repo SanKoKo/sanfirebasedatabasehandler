@@ -40,12 +40,12 @@ How to add
 		apply plugin: 'com.google.gms.google-services'
 
 
-#Features in this library
+# Features in this library
 - Firebase database ကို SQL database ကဲ့သို့အသုံးပြုနိုင်အောင် ရည်ရွယ်ပြီး ရေးထားခြင်းဖြစ်ပါတယ်။
 - SQL ကဲ့သို့  create,insert,update,delete,query စသည်တို့ပါ၀င်ပါတယ်။
 - Firebase နဲ့ Chatting application ရေးလိုသူတွက်ပါ အဆင်ပြေ လွယ်ကူစေရန် chatting အတွက် သီးသန့် method များ ပါ၀င်ပါတယ်။
 
-#Usage
+# Usage
 CRUD လုပ်မည့် object class သည် SanFireDbResult ကို extends လုပ်ရပါမည်။
 မဖြစ်မနေ Object class ထဲမှာ String uid နဲ့ empty constructor ထည့်ပေးရပါမည်။
 (မှတ်ချက် - uid ကိုမည်သည့် value မှ ထည့်ရန်မလိုပါ။ library မှ data auto ထည့်ပေးသွားပါမည်။)
@@ -98,23 +98,23 @@ CRUD လုပ်မည့် object class သည် SanFireDbResult ကို e
 
 		}
 
-#Create
+# Create
 		SanDatabaseHandler  san = new SanDatabaseHandler(this,FirebaseDatabase.getInstance().getReference());
 		san.createDatabaseByClass("SampleChatting",ChatUser.class);
 
-#Insert
+# Insert
 insert လုပ်ရန် အောက်ပါအတိုင်း တစ်ကြောင်းတည်းသာရေးရန် လိုပါသည်။
 		ChatUser mChat = new Chat("username","users@email.com);
 		mChat.insert();
 
-#update
+# Update
 		mChat.setEmail("others@email.com");
 		mChat.update(mChat.getUid());
 
-#delete
+# Delete
 		mChat.delete(mChat.getUid());
 		
-#getList
+# getList
 ဥပမာ - ChatUser table ထဲရှိတာတွေအားလုံး Select လုပ်မယ်ဆိုရင်
 		new SanFireDbResult<ChatUser>().getAllDataListCallback(ChatUser.class, new SanFireDbResult.CallbackResult<ChatUser>() {
 		            @Override
@@ -124,7 +124,7 @@ insert လုပ်ရန် အောက်ပါအတိုင်း တစ�
 		            }
 		        });
 
-#whereQuery
+# whereQuery
 Where အတွက်က လောလောဆယ် startWith query ပဲရပါဦးမယ်။ AND, OR စသည်ဖြင့်လည်း ထည့်လို့မရသေးပါဘူး။ Firebase database ကကို Support မပေးတာကြောင့်ပါ။ ဒါပေမယ့် နောက် library update မှာ ရအောင်လုပ်ပေးပါမယ်။
 
 		 new SanFireDbResult<ChatUser>().getDataListByLikeQuery(ChatUser.class, "userName", "user", new SanFireDbResult.CallbackResult<ChatUser>() {
@@ -135,7 +135,7 @@ Where အတွက်က လောလောဆယ် startWith query ပဲရ�
 		        });
 				
 				
-#Chatting 
+# Chatting 
 Chatting အတွက် သီးသန့် method နဲ့ class များပါရှိပါတယ်။
 Chat message အတွက် အောက်ပါအတိုင်းသာ ရေးရန်လိုပါသည်။ ChatMessage မှာ library တွင် အဆင်သင့်ပါသော Class ဖြစ်ပါသည်။
 		
@@ -154,8 +154,9 @@ Chat message များအား list အဖြစ်ယူရန် အော
 Sample project အနေနဲ့ Chatting application လေးရေးသားထားပါတယ်။ Auth တော့မပါသေးပါ။
 အဆင်မပြေတာရှိရင်သော်လည်းကောင်း၊ အကြံပေးလိုလျှင်လည်းကောင်း ကျွန်တော့်ဆီ တိုက်ရိုက် ဆက်သွယ်နိုင်ပါတယ်။
 
-#Credit
+# Credit
 ဒီ Library လေးကို အသုံးပြုမယ်ဆိုရင်တော့ ကျွန်တော့်ရဲ့ Sandevelopment သင်တန်းကျောင်းကို credit ပေးစေလိုပါတယ်ဗျာ။
+
 U San Ko Ko
 Sandevelopment
 https://www.facebook.com/sandevelopment
