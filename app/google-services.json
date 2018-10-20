@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "358096410543",
+    "firebase_url": "https://sanfirebasedbhandler.firebaseio.com",
+    "project_id": "sanfirebasedbhandler",
+    "storage_bucket": "sanfirebasedbhandler.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358096410543:android:e7b555547815c49e",
+        "android_client_info": {
+          "package_name": "net.sandevelopment.sanfirebasedbhandler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358096410543-0ppltuc2v4u63h21h70ehnugm877s1bd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.sandevelopment.sanfirebasedbhandler",
+            "certificate_hash": "2f4dcba32550c1d699d90345e9eda19d76b65534"
+          }
+        },
+        {
+          "client_id": "358096410543-606ghm42hv3f7sp1v10psigr35c22qhu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlKDbjUeVpeuvtXVwYBX7ewFE5v6khcDA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358096410543-606ghm42hv3f7sp1v10psigr35c22qhu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
